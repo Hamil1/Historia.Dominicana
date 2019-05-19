@@ -61594,7 +61594,7 @@ $(document).ready(function () {
 
       if (_user != null) {
         alert("Welcome ".concat(_user.email));
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SignedButton__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Logeado"), document.getElementById('botonesLogin'));
       }
     } else {// No user is signed in.
     }
