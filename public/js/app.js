@@ -61589,7 +61589,7 @@ $(document).ready(function () {
   $(document).on('click', 'input[formulario="cd-login"]', function () {
     var datos = $('form#login').serialize();
     datos += "&metodo=iniciarSesion";
-    alert(document.getElementById('signin-password').value());
+    alert(document.getElementById('signin-password').value);
   });
   $(document).on('click', 'a#cerrarSesion', function () {
     $.ajax({
