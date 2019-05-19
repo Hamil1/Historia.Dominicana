@@ -89,6 +89,9 @@ and open the template in the editor......
         <!--Todos los documentos JavaScript-->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+          <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
             https://firebase.google.com/docs/web/setup#config-web-app -->
