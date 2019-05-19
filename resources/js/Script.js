@@ -10,6 +10,7 @@
  import {SceneFade} from './ScrollMagic';
  import axios from 'axios';
  import Menu from './components/Menu';
+ import SignedButton from './components/SignedButton';
 
 $(document).ready(function(){
     console.log("El documento 'Script' de Historia Dominicana está listo.");
@@ -65,6 +66,7 @@ $(document).ready(function(){
 
             if(user != null){
                 alert(`Welcome ${user.email}`);
+                ReactDOM.render(<SignedButton />, document.getElementById('botonesLogin'));
             }
         } else {
           // No user is signed in.
@@ -72,8 +74,6 @@ $(document).ready(function(){
       });
     
     $(document).on('click','input[formulario="cd-login"]',function(){
-        var datos = $('form#login').serialize();
-        datos += "&metodo=iniciarSesion";
         let email = document.getElementById('signin-email').value;
         let password = document.getElementById('signin-password').value;
 
