@@ -87,6 +87,25 @@ and open the template in the editor......
         // put your code here
         ?>
         <!--Todos los documentos JavaScript-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyDHy-d-9EUXw5ZvYh6PR4eyDMJxHjvFxC0",
+              authDomain: "historia-dominicana-eaeb0.firebaseapp.com",
+              databaseURL: "https://historia-dominicana-eaeb0.firebaseio.com",
+              projectId: "historia-dominicana-eaeb0",
+              storageBucket: "historia-dominicana-eaeb0.appspot.com",
+              messagingSenderId: "836620723720",
+              appId: "1:836620723720:web:d41d0d026b4bb8da"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
@@ -100,7 +119,7 @@ and open the template in the editor......
         <script src="/js/velocity.min.js" type="text/javascript"></script>
         <script src="/js/Scrollmagic/plugins/animation.velocity.js" type="text/javascript"></script>
         <script src="/js/alertify/alertify.js"></script>
-        <script  src="/js/modalLogin/modalLogin.js"></script>
+        <script src="/js/modalLogin/modalLogin.js"></script>
         <script src="/terceros/ckeditor/ckeditor.js"></script>
         <script src="/terceros/MDB_Free/js/mdb.min.js"></script>
         <script src="/js/app.js" type="text/javascript"></script>

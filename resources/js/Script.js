@@ -62,7 +62,16 @@ $(document).ready(function(){
     $(document).on('click','input[formulario="cd-login"]',function(){
         var datos = $('form#login').serialize();
         datos += "&metodo=iniciarSesion";
-        alert(document.getElementById('signin-password').value);
+        let email = document.getElementById('signin-email').value;
+        let password = document.getElementById('signin-password').value;
+
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            
+            alert(`${errorMessage}`);
+          });
     });
 
     $(document).on('click','a#cerrarSesion',function(){

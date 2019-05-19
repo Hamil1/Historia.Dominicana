@@ -61589,7 +61589,14 @@ $(document).ready(function () {
   $(document).on('click', 'input[formulario="cd-login"]', function () {
     var datos = $('form#login').serialize();
     datos += "&metodo=iniciarSesion";
-    alert(document.getElementById('signin-password').value);
+    var email = document.getElementById('signin-email').value;
+    var password = document.getElementById('signin-password').value;
+    firebase.auth().createUserWithEmailAndPassword(email, password)["catch"](function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert("".concat(errorMessage));
+    });
   });
   $(document).on('click', 'a#cerrarSesion', function () {
     $.ajax({
