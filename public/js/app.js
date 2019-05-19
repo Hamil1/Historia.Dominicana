@@ -61589,15 +61589,7 @@ $(document).ready(function () {
   $(document).on('click', 'input[formulario="cd-login"]', function () {
     var datos = $('form#login').serialize();
     datos += "&metodo=iniciarSesion";
-    $.ajax({
-      type: "POST",
-      url: "controladores/mainController.php",
-      data: datos,
-      dataType: "json"
-    }).done(function (data) {
-      data.option == 'error' ? alertify.error(data.message) : alertify.success(data.message);
-      $('div#botonesLogin').html(data.boton);
-    });
+    alert(getElementById('signin-password').value());
   });
   $(document).on('click', 'a#cerrarSesion', function () {
     $.ajax({
