@@ -61586,6 +61586,16 @@ $(document).ready(function () {
       });
     }
   });
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      var _user = firebase.auth().currentUser;
+
+      if (_user != null) {
+        alert("Welcome ".concat(_user.email));
+      }
+    } else {// No user is signed in.
+    }
+  });
   $(document).on('click', 'input[formulario="cd-login"]', function () {
     var datos = $('form#login').serialize();
     datos += "&metodo=iniciarSesion";

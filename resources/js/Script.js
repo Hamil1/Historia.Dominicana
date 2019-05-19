@@ -58,6 +58,18 @@ $(document).ready(function(){
             });
         }
     });
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            let user = firebase.auth().currentUser;
+
+            if(user != null){
+                alert(`Welcome ${user.email}`);
+            }
+        } else {
+          // No user is signed in.
+        }
+      });
     
     $(document).on('click','input[formulario="cd-login"]',function(){
         var datos = $('form#login').serialize();
