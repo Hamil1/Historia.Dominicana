@@ -87,14 +87,11 @@ $(document).ready(function(){
     });
 
     $(document).on('click','a#cerrarSesion',function(){
-        $.ajax({
-            type: "POST",
-            url: "controladores/mainController.php",
-            data: "metodo=cerrarSesion",
-            dataType: "json"
-        }).done(function(data){
-            $('div#botonesLogin').html(data.boton);
-        });
+        firebase.auth().signOut().then(function() {
+            alert(`Sesion cerrada con éxito`);
+          }).catch(function(error) {
+            alert(`Cerrar sesion falló`);
+          });
     });
 
     ReactDOM.render(<Menu />, document.getElementById('menu'));
