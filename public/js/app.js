@@ -62056,8 +62056,8 @@ function (_Component) {
   }
 
   _createClass(SignedButton, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
+    key: "componentDidMount",
+    value: function componentDidMount() {
       var _React$createElement;
 
       this.html.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
