@@ -62068,7 +62068,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
         id: "iniciarSesion",
         "data-toggle": "modal",
-        "class": "accederLogin cd-signin"
+        className: "accederLogin cd-signin"
       }, _defineProperty(_React$createElement, "data-toggle", "tooltip"), _defineProperty(_React$createElement, "title", "Iniciar sesi\xF3n"), _defineProperty(_React$createElement, "data-placement", "left"), _React$createElement), "Iniciar sesi\xF3n")));
     }
   }, {
