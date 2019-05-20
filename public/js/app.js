@@ -62023,8 +62023,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -62061,20 +62059,27 @@ function (_Component) {
   _createClass(SignedButton, [{
     key: "componentWillMount",
     value: function componentWillMount() {
-      var _React$createElement;
-
-      this.html.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "data-toggle": "modal"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
-        id: "iniciarSesion",
-        "data-toggle": "modal",
-        className: "accederLogin cd-signin"
-      }, _defineProperty(_React$createElement, "data-toggle", "tooltip"), _defineProperty(_React$createElement, "title", "Iniciar sesi\xF3n"), _defineProperty(_React$createElement, "data-placement", "left"), _React$createElement), "Iniciar sesi\xF3n")));
+      this.html.push();
     }
   }, {
     key: "render",
     value: function render() {
-      return this.html;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        "data-toggle": "tooltip",
+        "class": "agregarArticulo"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        id: "agregarArticulo",
+        "data-target": "#fullHeightModalBottom",
+        "data-toggle": "modal",
+        "class": "btn acceder cd-signin waves-effect waves-light",
+        title: "Agregar Articulo",
+        "data-placement": "left"
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-plus"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        id: "cerrarSesion",
+        "class": "cerrarSesion"
+      }, "Cerrar sesi\xF3n"));
     }
   }]);
 

@@ -8,13 +8,18 @@ class SignedButton extends Component{
 
     componentWillMount(){
         this.html.push(
-        <span data-toggle="modal">
-            <button id="iniciarSesion" data-toggle="modal" className="accederLogin cd-signin" data-toggle="tooltip" title="Iniciar sesión" data-placement="left">Iniciar sesión</button>
-        </span>
+            
         );
     }
     render(){
-        return this.html;
+        return (
+        <div>
+            <span data-toggle="tooltip" class="agregarArticulo">
+                <button id="agregarArticulo" data-target="#fullHeightModalBottom" data-toggle="modal" class="btn acceder cd-signin waves-effect waves-light" title="Agregar Articulo" data-placement="left"> <i class="fa fa-plus"></i></button>
+            </span>
+            <a id="cerrarSesion" class="cerrarSesion">Cerrar sesión</a>
+        </div>
+        );
     }
 }
 
