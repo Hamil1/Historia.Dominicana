@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 
 class SignedButton extends Component{
     constructor(){
+        super();
         this.html = [];
     }
 
-    componentDidMount(){
+    componentWillMount(){
         this.html.push(
         <span data-toggle="modal">
             <button id="iniciarSesion" data-toggle="modal" class="accederLogin cd-signin" data-toggle="tooltip" title="Iniciar sesión" data-placement="left">Iniciar sesión</button>
