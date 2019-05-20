@@ -66,7 +66,7 @@ $(document).ready(function(){
 
             if(user != null){
                 alert(`Welcome ${user.email}`);
-                ReactDOM.render(<h1>Logeado</h1>, document.getElementById('botonesLogin'));
+                ReactDOM.render(<SignedButton />, document.getElementById('botonesLogin'));
             }
         } else {
           // No user is signed in.

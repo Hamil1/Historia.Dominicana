@@ -61594,7 +61594,7 @@ $(document).ready(function () {
 
       if (_user != null) {
         alert("Welcome ".concat(_user.email));
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Logeado"), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SignedButton__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
       }
     } else {// No user is signed in.
     }
@@ -62035,8 +62035,6 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
@@ -62049,23 +62047,31 @@ function (_Component) {
   _inherits(SignedButton, _Component);
 
   function SignedButton() {
+    var _this;
+
     _classCallCheck(this, SignedButton);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SignedButton).apply(this, arguments));
+    _this.html = [];
+    return _possibleConstructorReturn(_this);
   }
 
   _createClass(SignedButton, [{
-    key: "render",
-    value: function render() {
+    key: "componentWillMount",
+    value: function componentWillMount() {
       var _React$createElement;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      this.html.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         "data-toggle": "modal"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
         id: "iniciarSesion",
         "data-toggle": "modal",
-        className: "accederLogin cd-signin"
-      }, _defineProperty(_React$createElement, "data-toggle", "tooltip"), _defineProperty(_React$createElement, "title", "Iniciar sesi\xF3n"), _defineProperty(_React$createElement, "data-placement", "left"), _React$createElement), "Iniciar sesi\xF3n"));
+        "class": "accederLogin cd-signin"
+      }, _defineProperty(_React$createElement, "data-toggle", "tooltip"), _defineProperty(_React$createElement, "title", "Iniciar sesi\xF3n"), _defineProperty(_React$createElement, "data-placement", "left"), _React$createElement), "Iniciar sesi\xF3n")));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return this.html;
     }
   }]);
 
