@@ -62047,38 +62047,29 @@ function (_Component) {
   _inherits(SignedButton, _Component);
 
   function SignedButton() {
-    var _this;
-
     _classCallCheck(this, SignedButton);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(SignedButton).call(this));
-    _this.html = [];
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(SignedButton).apply(this, arguments));
   }
 
   _createClass(SignedButton, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      this.html.push();
-    }
-  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         "data-toggle": "tooltip",
-        "class": "agregarArticulo"
+        className: "agregarArticulo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         id: "agregarArticulo",
         "data-target": "#fullHeightModalBottom",
         "data-toggle": "modal",
-        "class": "btn acceder cd-signin waves-effect waves-light",
+        className: "btn acceder cd-signin waves-effect waves-light",
         title: "Agregar Articulo",
         "data-placement": "left"
       }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "fa fa-plus"
+        className: "fa fa-plus"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         id: "cerrarSesion",
-        "class": "cerrarSesion"
+        className: "cerrarSesion"
       }, "Cerrar sesi\xF3n"));
     }
   }]);
