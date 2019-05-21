@@ -63526,9 +63526,9 @@ $(document).ready(function () {
 
       if (_user != null) {
         alert("Welcome ".concat(_user.email));
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Signedb, null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_signedb__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
       } else {
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Loginb, null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginb__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
       }
     } else {// No user is signed in.
     }
@@ -63545,7 +63545,7 @@ $(document).ready(function () {
   });
   $(document).on('click', 'a#cerrarSesion', function () {
     firebase.auth().signOut().then(function () {
-      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Loginb, null), document.getElementById('botonesLogin'));
+      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginb__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
     })["catch"](function (error) {
       alert("Cerrar sesion fall\xF3");
     });
