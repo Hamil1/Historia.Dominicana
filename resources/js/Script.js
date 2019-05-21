@@ -10,8 +10,8 @@
  import {SceneFade} from './ScrollMagic';
  import axios from 'axios';
  import Menu from './components/Menu';
- import Signedb from './components/signedb';
- import Loginb from './components/loginb';
+ import Signedb from './components/Signedb';
+ import Loginb from './components/Loginb';
 
 $(document).ready(function(){
     console.log("El documento 'Script' de Historia Dominicana está listo.");

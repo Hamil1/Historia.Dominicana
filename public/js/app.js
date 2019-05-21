@@ -63463,8 +63463,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Menu */ "./resources/js/components/Menu.js");
-/* harmony import */ var _components_signedb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/signedb */ "./resources/js/components/signedb.js");
-/* harmony import */ var _components_loginb__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/loginb */ "./resources/js/components/loginb.js");
+/* harmony import */ var _components_Signedb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Signedb */ "./resources/js/components/Signedb.js");
+/* harmony import */ var _components_Loginb__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Loginb */ "./resources/js/components/Loginb.js");
 /*
  Project: HistoriaDominicana
  File: Script
@@ -63526,9 +63526,9 @@ $(document).ready(function () {
 
       if (_user != null) {
         alert("Welcome ".concat(_user.email));
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_signedb__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Signedb__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
       } else {
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginb__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Loginb__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
       }
     } else {// No user is signed in.
     }
@@ -63545,7 +63545,7 @@ $(document).ready(function () {
   });
   $(document).on('click', 'a#cerrarSesion', function () {
     firebase.auth().signOut().then(function () {
-      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginb__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
+      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Loginb__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
     })["catch"](function (error) {
       alert("Cerrar sesion fall\xF3");
     });
@@ -63841,6 +63841,72 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/Loginb.js":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Loginb.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! React */ "./node_modules/React/index.js");
+/* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(React__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var Loginb =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Loginb, _Component);
+
+  function Loginb() {
+    _classCallCheck(this, Loginb);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Loginb).apply(this, arguments));
+  }
+
+  _createClass(Loginb, [{
+    key: "render",
+    value: function render() {
+      var _React$createElement;
+
+      return React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        "data-toggle": "modal"
+      }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
+        id: "iniciarSesion",
+        "data-toggle": "modal",
+        className: "accederLogin cd-signin"
+      }, _defineProperty(_React$createElement, "data-toggle", "tooltip"), _defineProperty(_React$createElement, "title", "Iniciar sesi\xF3n"), _defineProperty(_React$createElement, "data-placement", "left"), _React$createElement), "Iniciar sesi\xF3n"));
+    }
+  }]);
+
+  return Loginb;
+}(React__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Loginb);
+
+/***/ }),
+
 /***/ "./resources/js/components/Menu.js":
 /*!*****************************************!*\
   !*** ./resources/js/components/Menu.js ***!
@@ -63941,75 +64007,9 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/loginb.js":
-/*!*******************************************!*\
-  !*** ./resources/js/components/loginb.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! React */ "./node_modules/React/index.js");
-/* harmony import */ var React__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(React__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-var Loginb =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Loginb, _Component);
-
-  function Loginb() {
-    _classCallCheck(this, Loginb);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Loginb).apply(this, arguments));
-  }
-
-  _createClass(Loginb, [{
-    key: "render",
-    value: function render() {
-      var _React$createElement;
-
-      return React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "data-toggle": "modal"
-      }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
-        id: "iniciarSesion",
-        "data-toggle": "modal",
-        className: "accederLogin cd-signin"
-      }, _defineProperty(_React$createElement, "data-toggle", "tooltip"), _defineProperty(_React$createElement, "title", "Iniciar sesi\xF3n"), _defineProperty(_React$createElement, "data-placement", "left"), _React$createElement), "Iniciar sesi\xF3n"));
-    }
-  }]);
-
-  return Loginb;
-}(React__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Loginb);
-
-/***/ }),
-
-/***/ "./resources/js/components/signedb.js":
+/***/ "./resources/js/components/Signedb.js":
 /*!********************************************!*\
-  !*** ./resources/js/components/signedb.js ***!
+  !*** ./resources/js/components/Signedb.js ***!
   \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
