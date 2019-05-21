@@ -16,6 +16,12 @@
 $(document).ready(function(){
     console.log("El documento 'Script' de Historia Dominicana está listo.");
 
+    ReactDOM.render(<Menu />, document.getElementById('menu'));
+
+    ReactDOM.render(<Body />, document.getElementById('articulo'));
+
+    ReactDOM.render(<AddArticle />, document.getElementById('fullHeightModalBottom'));
+    
     setTimeout(() => {//Tenemos que esperar a que ReactDom haga render para ponerle las Escenas a nuesta pagina :)
         SceneFade('div.desarrolloArticulo div.magic');
     }, 2000);//Para que nuestra Escena se cree al cargar la pagina
@@ -94,9 +100,4 @@ $(document).ready(function(){
           });
     });
 
-    ReactDOM.render(<Menu />, document.getElementById('menu'));
-
-    ReactDOM.render(<Body />, document.getElementById('articulo'));
-
-    ReactDOM.render(<AddArticle />, document.getElementById('fullHeightModalBottom'));
 });

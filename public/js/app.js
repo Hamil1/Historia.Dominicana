@@ -63479,6 +63479,9 @@ __webpack_require__.r(__webpack_exports__);
 
 $(document).ready(function () {
   console.log("El documento 'Script' de Historia Dominicana está listo.");
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('menu'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('articulo'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_addArticle__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('fullHeightModalBottom'));
   setTimeout(function () {
     //Tenemos que esperar a que ReactDom haga render para ponerle las Escenas a nuesta pagina :)
     Object(_ScrollMagic__WEBPACK_IMPORTED_MODULE_3__["SceneFade"])('div.desarrolloArticulo div.magic');
@@ -63547,9 +63550,6 @@ $(document).ready(function () {
       alert("Cerrar sesion fall\xF3");
     });
   });
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('menu'));
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('articulo'));
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_addArticle__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('fullHeightModalBottom'));
 });
 
 /***/ }),
