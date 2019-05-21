@@ -64,13 +64,13 @@ $(document).ready(function(){
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             let user = firebase.auth().currentUser;
-            alert(user);
-            if(user == null){
+
+            if(user != null){
                 alert(`Welcome ${user.email}`);
                 ReactDOM.render(<Signedb />, document.getElementById('botonesLogin'));
             }
         } else {
-          // No user is signed in.
+            ReactDOM.render(<Loginb />, document.getElementById('botonesLogin'));
         }
       });
     
@@ -94,9 +94,6 @@ $(document).ready(function(){
             alert(`Cerrar sesion falló`);
           });
     });
-
-
-    ReactDOM.render(<Loginb />, document.getElementById('botonesLogin'));
 
     ReactDOM.render(<Menu />, document.getElementById('menu'));
 
