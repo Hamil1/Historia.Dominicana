@@ -30,14 +30,6 @@ and open the template in the editor......
                 <div id="contenedorAcceder" class="contenedorAcceder">
                     <div id="botonesLogin" class="botonesLogin">
                         
-                        <?php 
-                            if(isset($_SESSION['login'])){ //Aqui no se usa session_start() porque ya está activado en php.ini?>
-                                <span data-toggle="tooltip" class="agregarArticulo"><button id="agregarArticulo" data-target="#fullHeightModalBottom" data-toggle="modal" class="btn acceder cd-signin waves-effect waves-light" title="Agregar Articulo" data-placement="left"> <i class="fa fa-plus"></i></button></span><a id="cerrarSesion" class="cerrarSesion">Cerrar sesión</a>
-                                <?php
-                            }else{ ?>
-                                
-                           <?php }
-                        ?>
                     </div>
                     <!-- <span data-toggle="modal"><button id="agregarArticulo" data-toggle="modal" class="btn acceder cd-signin" data-toggle="tooltip" title="Agregar Articulo" data-placement="left"> <i class="fa fa-plus"></i></button></span> -->
                 </div>
