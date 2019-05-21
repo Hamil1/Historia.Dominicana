@@ -64,7 +64,7 @@ $(document).ready(function(){
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             let user = firebase.auth().currentUser;
-
+            alert(user);
             if(user == null){
                 alert(`Welcome ${user.email}`);
                 ReactDOM.render(<Signedb />, document.getElementById('botonesLogin'));

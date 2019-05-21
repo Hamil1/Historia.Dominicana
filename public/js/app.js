@@ -63523,6 +63523,7 @@ $(document).ready(function () {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
       var _user = firebase.auth().currentUser;
+      alert(_user);
 
       if (_user == null) {
         alert("Welcome ".concat(_user.email));
