@@ -65,7 +65,7 @@ $(document).ready(function(){
         if (user) {
             let user = firebase.auth().currentUser;
 
-            if(user != null){
+            if(user == null){
                 alert(`Welcome ${user.email}`);
                 ReactDOM.render(<Signedb />, document.getElementById('botonesLogin'));
             }
@@ -94,6 +94,9 @@ $(document).ready(function(){
             alert(`Cerrar sesion falló`);
           });
     });
+
+
+    ReactDOM.render(<Loginb />, document.getElementById('botonesLogin'));
 
     ReactDOM.render(<Menu />, document.getElementById('menu'));
 
