@@ -63985,7 +63985,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       var colorWhite = {
-        color: white
+        color: "white"
       };
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-dialog modal-full-height modal-bottom",

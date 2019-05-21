@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class AddArticle extends Component{
     render(){
         const colorWhite = {
-            color: white
+            color: "white"
         };
         return(
             <div className="modal-dialog modal-full-height modal-bottom" role="document">
