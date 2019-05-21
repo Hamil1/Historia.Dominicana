@@ -68,8 +68,6 @@ $(document).ready(function(){
             if(user != null){
                 alert(`Welcome ${user.email}`);
                 ReactDOM.render(<Signedb />, document.getElementById('botonesLogin'));
-            }else{
-                ReactDOM.render(<Loginb />, document.getElementById('botonesLogin'));
             }
         } else {
           // No user is signed in.
