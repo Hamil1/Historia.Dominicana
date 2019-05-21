@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Article from './Article';
 
-class App extends Component {
+class Body extends Component {
     render() {
         return (
             <div>
@@ -14,4 +14,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Body;

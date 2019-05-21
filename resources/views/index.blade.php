@@ -40,29 +40,8 @@ and open the template in the editor......
             </header>
 <!-- Full Height Modal Right -->
 <div class="modal fade bottom" id="fullHeightModalBottom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
-      <div class="modal-dialog modal-full-height modal-bottom" role="document">
-        <!--Content-->
-        <div class="modal-content">
-          <!--Header-->
-          <div class="modal-header magenta">
-            <h4 class="modal-title w-100" id="myModalLabel">Agregar Articulo</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" style="color:white">×</span>
-            </button>
-          </div>
-          <!--Body-->
-          <div class="modal-body">
-            <textarea name="cuerpoArticulo" id="cuerpoArticulo" cols="30" rows="10"></textarea>
-          </div>
-          <!--Footer-->
-          <div class="modal-footer">
-            <button type="button" class="btn botonRojo waves-effect waves-light" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn botonMagenta waves-effect waves-light">Guardar cambios</button>
-          </div>
-        </div>
-        <!--/.Content-->
-      </div>
-    </div>
+      
+</div>
   <!-- Full Height Modal Right -->
 
 <div class="cd-user-modal" id="modalLog"> <!-- this is the entire modal form, including the background -->

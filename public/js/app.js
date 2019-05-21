@@ -63460,11 +63460,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Index */ "./resources/js/components/Index.js");
 /* harmony import */ var _ScrollMagic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ScrollMagic */ "./resources/js/ScrollMagic.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Menu */ "./resources/js/components/Menu.js");
-/* harmony import */ var _components_signedButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/signedButton */ "./resources/js/components/signedButton.js");
-/* harmony import */ var _components_loginButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/loginButton */ "./resources/js/components/loginButton.js");
+/* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Menu */ "./resources/js/components/Menu.js");
+/* harmony import */ var _components_signedButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/signedButton */ "./resources/js/components/signedButton.js");
+/* harmony import */ var _components_loginButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/loginButton */ "./resources/js/components/loginButton.js");
+/* harmony import */ var _components_addArticle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/addArticle */ "./resources/js/components/addArticle.js");
 /*
  Project: HistoriaDominicana
  File: Script
@@ -63525,10 +63524,10 @@ $(document).ready(function () {
       var _user = firebase.auth().currentUser;
 
       if (_user != null) {
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_signedButton__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_signedButton__WEBPACK_IMPORTED_MODULE_5__["default"], null), document.getElementById('botonesLogin'));
       }
     } else {
-      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginButton__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
+      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginButton__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
     }
   });
   $(document).on('click', 'input[formulario="cd-login"]', function () {
@@ -63543,13 +63542,14 @@ $(document).ready(function () {
   });
   $(document).on('click', 'a#cerrarSesion', function () {
     firebase.auth().signOut().then(function () {
-      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginButton__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('botonesLogin'));
+      react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_loginButton__WEBPACK_IMPORTED_MODULE_6__["default"], null), document.getElementById('botonesLogin'));
     })["catch"](function (error) {
       alert("Cerrar sesion fall\xF3");
     });
   });
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_5__["default"], null), document.getElementById('menu'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Menu__WEBPACK_IMPORTED_MODULE_4__["default"], null), document.getElementById('menu'));
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Index__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('articulo'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_addArticle__WEBPACK_IMPORTED_MODULE_7__["default"], null), document.getElementById('fullHeightModalBottom'));
 });
 
 /***/ }),
@@ -63814,28 +63814,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var App =
+var Body =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(App, _Component);
+  _inherits(Body, _Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function Body() {
+    _classCallCheck(this, Body);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Body).apply(this, arguments));
   }
 
-  _createClass(App, [{
+  _createClass(Body, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Article__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Article__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Article__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Article__WEBPACK_IMPORTED_MODULE_1__["default"], null));
     }
   }]);
 
-  return App;
+  return Body;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
+/* harmony default export */ __webpack_exports__["default"] = (Body);
 
 /***/ }),
 
@@ -63936,6 +63936,96 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Menu);
+
+/***/ }),
+
+/***/ "./resources/js/components/addArticle.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/addArticle.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var AddArticle =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(AddArticle, _Component);
+
+  function AddArticle() {
+    _classCallCheck(this, AddArticle);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(AddArticle).apply(this, arguments));
+  }
+
+  _createClass(AddArticle, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-dialog modal-full-height modal-bottom",
+        role: "document"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-header magenta"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        className: "modal-title w-100",
+        id: "myModalLabel"
+      }, "Agregar Articulo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "button",
+        className: "close",
+        "data-dismiss": "modal",
+        "aria-label": "Close"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        "aria-hidden": "true",
+        style: "color:white"
+      }, "\xD7"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+        name: "cuerpoArticulo",
+        id: "cuerpoArticulo",
+        cols: "30",
+        rows: "10"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "modal-footer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "button",
+        className: "btn botonRojo waves-effect waves-light",
+        "data-dismiss": "modal"
+      }, "Cerrar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "button",
+        className: "btn botonMagenta waves-effect waves-light"
+      }, "Guardar cambios"))));
+    }
+  }]);
+
+  return AddArticle;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (AddArticle);
 
 /***/ }),
 

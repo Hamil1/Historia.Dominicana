@@ -4,14 +4,14 @@
  Created by Hamil on May 5, 2018 - 10:13:27 AM.
  */
 
- import React, {Component} from 'react';
+ import React from 'react';
  import ReactDOM from 'react-dom';
- import App from './components/Index';
+ import Body from './components/Index';
  import {SceneFade} from './ScrollMagic';
- import axios from 'axios';
  import Menu from './components/Menu';
  import Signedb from './components/signedButton';
  import Loginb from './components/loginButton';
+ import AddArticle from './components/addArticle';
 
 $(document).ready(function(){
     console.log("El documento 'Script' de Historia Dominicana está listo.");
@@ -96,5 +96,7 @@ $(document).ready(function(){
 
     ReactDOM.render(<Menu />, document.getElementById('menu'));
 
-    ReactDOM.render(<App />, document.getElementById('articulo'));
+    ReactDOM.render(<Body />, document.getElementById('articulo'));
+
+    ReactDOM.render(<AddArticle />, document.getElementById('fullHeightModalBottom'));
 });
