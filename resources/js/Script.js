@@ -66,7 +66,6 @@ $(document).ready(function(){
             let user = firebase.auth().currentUser;
 
             if(user != null){
-                alert(`Welcome ${user.email}`);
                 ReactDOM.render(<Signedb />, document.getElementById('botonesLogin'));
             }
         } else {
