@@ -10,7 +10,8 @@
  import {SceneFade} from './ScrollMagic';
  import axios from 'axios';
  import Menu from './components/Menu';
- import SignedButton from './components/SignedButton';
+ import Signedb from './components/Signedb';
+ import loginb from './components/loginb';
 
 $(document).ready(function(){
     console.log("El documento 'Script' de Historia Dominicana está listo.");
@@ -66,7 +67,7 @@ $(document).ready(function(){
 
             if(user != null){
                 alert(`Welcome ${user.email}`);
-                ReactDOM.render(<SignedButton />, document.getElementById('botonesLogin'));
+                ReactDOM.render(<si />, document.getElementById('botonesLogin'));
             }
         } else {
           // No user is signed in.
@@ -88,7 +89,7 @@ $(document).ready(function(){
 
     $(document).on('click','a#cerrarSesion',function(){
         firebase.auth().signOut().then(function() {
-            alert(`Sesion cerrada con éxito`);
+            ReactDOM.render(<Loginb />, document.getElementById('botonesLogin'));
           }).catch(function(error) {
             alert(`Cerrar sesion falló`);
           });

@@ -35,7 +35,7 @@ and open the template in the editor......
                                 <span data-toggle="tooltip" class="agregarArticulo"><button id="agregarArticulo" data-target="#fullHeightModalBottom" data-toggle="modal" class="btn acceder cd-signin waves-effect waves-light" title="Agregar Articulo" data-placement="left"> <i class="fa fa-plus"></i></button></span><a id="cerrarSesion" class="cerrarSesion">Cerrar sesión</a>
                                 <?php
                             }else{ ?>
-                                <span data-toggle="modal"><button id="iniciarSesion" data-toggle="modal" class="accederLogin cd-signin" data-toggle="tooltip" title="Iniciar sesión" data-placement="left">Iniciar sesión</button></span>
+                                
                            <?php }
                         ?>
                     </div>
