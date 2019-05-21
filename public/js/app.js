@@ -63984,6 +63984,9 @@ function (_Component) {
   _createClass(AddArticle, [{
     key: "render",
     value: function render() {
+      var colorWhite = {
+        color: white
+      };
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-dialog modal-full-height modal-bottom",
         role: "document"
@@ -64001,7 +64004,7 @@ function (_Component) {
         "aria-label": "Close"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         "aria-hidden": "true",
-        style: "color:white"
+        style: colorWhite
       }, "\xD7"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {

@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 
 class AddArticle extends Component{
     render(){
+        const colorWhite = {
+            color: white
+        };
         return(
             <div className="modal-dialog modal-full-height modal-bottom" role="document">
                 {/* Content */}
@@ -10,7 +13,7 @@ class AddArticle extends Component{
                 <div className="modal-header magenta">
                     <h4 className="modal-title w-100" id="myModalLabel">Agregar Articulo</h4>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" style="color:white">×</span>
+                    <span aria-hidden="true" style={colorWhite}>×</span>
                     </button>
                 </div>
                 {/* Body */}
