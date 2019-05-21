@@ -63463,7 +63463,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_Menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Menu */ "./resources/js/components/Menu.js");
-/* harmony import */ var _components_Signedb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Signedb */ "./resources/js/components/Signedb.js");
+/* harmony import */ var _components_signedb__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/signedb */ "./resources/js/components/signedb.js");
 /* harmony import */ var _components_loginb__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/loginb */ "./resources/js/components/loginb.js");
 /*
  Project: HistoriaDominicana
@@ -63526,7 +63526,7 @@ $(document).ready(function () {
 
       if (_user != null) {
         alert("Welcome ".concat(_user.email));
-        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("si", null), document.getElementById('botonesLogin'));
+        react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Signedb, null), document.getElementById('botonesLogin'));
       }
     } else {// No user is signed in.
     }
@@ -63939,77 +63939,6 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Signedb.js":
-/*!********************************************!*\
-  !*** ./resources/js/components/Signedb.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-var Signedb =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Signedb, _Component);
-
-  function Signedb() {
-    _classCallCheck(this, Signedb);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Signedb).apply(this, arguments));
-  }
-
-  _createClass(Signedb, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "data-toggle": "tooltip",
-        className: "agregarArticulo"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        id: "agregarArticulo",
-        "data-target": "#fullHeightModalBottom",
-        "data-toggle": "modal",
-        className: "btn acceder cd-signin waves-effect waves-light",
-        title: "Agregar Articulo",
-        "data-placement": "left"
-      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-plus"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        id: "cerrarSesion",
-        className: "cerrarSesion"
-      }, "Cerrar sesi\xF3n"));
-    }
-  }]);
-
-  return Signedb;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Signedb);
-
-/***/ }),
-
 /***/ "./resources/js/components/loginb.js":
 /*!*******************************************!*\
   !*** ./resources/js/components/loginb.js ***!
@@ -64073,6 +64002,77 @@ function (_Component) {
 }(React__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Loginb);
+
+/***/ }),
+
+/***/ "./resources/js/components/signedb.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/signedb.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var signedb =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(signedb, _Component);
+
+  function signedb() {
+    _classCallCheck(this, signedb);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(signedb).apply(this, arguments));
+  }
+
+  _createClass(signedb, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        "data-toggle": "tooltip",
+        className: "agregarArticulo"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        id: "agregarArticulo",
+        "data-target": "#fullHeightModalBottom",
+        "data-toggle": "modal",
+        className: "btn acceder cd-signin waves-effect waves-light",
+        title: "Agregar Articulo",
+        "data-placement": "left"
+      }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-plus"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        id: "cerrarSesion",
+        className: "cerrarSesion"
+      }, "Cerrar sesi\xF3n"));
+    }
+  }]);
+
+  return signedb;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (signedb);
 
 /***/ }),
 

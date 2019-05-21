@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Signedb extends Component{
+class signedb extends Component{
     
     render(){
         return (
@@ -14,4 +14,4 @@ class Signedb extends Component{
     }
 }
 
-export default Signedb;
+export default signedb;

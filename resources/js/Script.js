@@ -10,7 +10,7 @@
  import {SceneFade} from './ScrollMagic';
  import axios from 'axios';
  import Menu from './components/Menu';
- import Signedb from './components/Signedb';
+ import signedb from './components/signedb';
  import loginb from './components/loginb';
 
 $(document).ready(function(){
@@ -67,7 +67,7 @@ $(document).ready(function(){
 
             if(user != null){
                 alert(`Welcome ${user.email}`);
-                ReactDOM.render(<si />, document.getElementById('botonesLogin'));
+                ReactDOM.render(<Signedb />, document.getElementById('botonesLogin'));
             }
         } else {
           // No user is signed in.
