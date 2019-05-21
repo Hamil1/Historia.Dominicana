@@ -64038,18 +64038,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var signedb =
+var Signedb =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(signedb, _Component);
+  _inherits(Signedb, _Component);
 
-  function signedb() {
-    _classCallCheck(this, signedb);
+  function Signedb() {
+    _classCallCheck(this, Signedb);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(signedb).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Signedb).apply(this, arguments));
   }
 
-  _createClass(signedb, [{
+  _createClass(Signedb, [{
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -64071,10 +64071,10 @@ function (_Component) {
     }
   }]);
 
-  return signedb;
+  return Signedb;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (signedb);
+/* harmony default export */ __webpack_exports__["default"] = (Signedb);
 
 /***/ }),
 
