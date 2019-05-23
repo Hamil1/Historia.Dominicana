@@ -20,7 +20,7 @@ class Loginb extends Component{
             let credential = error.credential;
             // ...
 
-            console.log(`Tenemos un error ${errorMessage}`);
+            console.log(`${errorMessage}`);
           });
     }
     render(){
