@@ -64083,7 +64083,9 @@ function (_Component) {
 
       return React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         "data-toggle": "modal"
-      }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
+      }, React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        id: "googleButton"
+      }, "Sign in with Google"), React__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", (_React$createElement = {
         id: "iniciarSesion",
         "data-toggle": "modal",
         className: "accederLogin cd-signin"
