@@ -29,7 +29,7 @@ and open the template in the editor......
             <div>
                 <div id="contenedorAcceder" class="contenedorAcceder">
                     <div id="botonesLogin" class="botonesLogin">
-                        
+                        <button id="googleButton">Sign in with Google</button>
                     </div>
                     <!-- <span data-toggle="modal"><button id="agregarArticulo" data-toggle="modal" class="btn acceder cd-signin" data-toggle="tooltip" title="Agregar Articulo" data-placement="left"> <i class="fa fa-plus"></i></button></span> -->
                 </div>
