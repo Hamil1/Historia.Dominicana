@@ -70,7 +70,7 @@ and open the template in the editor......
             // Your web app's Firebase configuration
             var firebaseConfig = {
               apiKey: "AIzaSyDHy-d-9EUXw5ZvYh6PR4eyDMJxHjvFxC0",
-              authDomain: "historia-dominicana-eaeb0.firebaseapp.com",
+              authDomain: "192.168.0.7",
               databaseURL: "https://historia-dominicana-eaeb0.firebaseio.com",
               projectId: "historia-dominicana-eaeb0",
               storageBucket: "historia-dominicana-eaeb0.appspot.com",
