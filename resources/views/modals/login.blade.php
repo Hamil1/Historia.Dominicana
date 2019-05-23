@@ -27,6 +27,14 @@
             <p class="fieldset">
                 <input class="full-width" type="submit" value="Iniciar sesión" formulario="cd-login">
             </p>
+
+            <p class="fieldset">
+                <label>OR</label>
+            </p>
+
+            <p class="fieldset">
+                <input class="full-width" type="submit" value="Iniciar sesión" formulario="cd-login">
+            </p>
         </form>
         
         <p class="cd-form-bottom-message"><a href="#0">¿Olvidaste tu contraseña?</a></p>
