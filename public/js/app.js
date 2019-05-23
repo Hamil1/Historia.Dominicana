@@ -64099,7 +64099,7 @@ function (_Component) {
 
         var credential = error.credential; // ...
 
-        console.log("".concat(errorMessage));
+        alert("".concat(errorMessage));
       });
     });
 
