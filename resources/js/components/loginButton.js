@@ -19,6 +19,8 @@ class Loginb extends Component{
             // The firebase.auth.AuthCredential type that was used.
             let credential = error.credential;
             // ...
+
+            console.log(`Tenemos un error ${errorMessage}`);
           });
     }
     render(){
